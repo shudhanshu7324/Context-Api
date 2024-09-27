@@ -1,10 +1,13 @@
 import React from 'react'
+import ThemeProvider from './contextApi/ThemeProvider'
+import ThemeSwitcher from './components/ThemeSwitcher'
 
 const App = () => {
   return (
-    <div>
+    <ThemeProvider>
       <h1>Context Api</h1>
-    </div>
+      <ThemeSwitcher></ThemeSwitcher>
+    </ThemeProvider>
   )
 }
 
